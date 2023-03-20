@@ -18,5 +18,5 @@ int main(int argc, char *argv[])
      QObject::connect(&o3, &QObject::destroyed, [] { qDebug()<< "\nDestruction de o3"; });
      QObject::connect(&o4, &QObject::destroyed, [] { qDebug()<< "\nDestruction de o4"; });
 
-     return 0;
+     return 0; //a.exec(); est une boucle qui masque la destruction de l'objet
 }
